@@ -1,0 +1,116 @@
+[
+  {
+    "outputFileName": "assets/css/flaticon.min.css",
+    "inputFiles": [
+      "assets/css/flaticon.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/animate.min1.min.css",
+    "inputFiles": [
+      "assets/css/animate.min1.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/flaticon-skillgro.min.css",
+    "inputFiles": [
+      "assets/css/flaticon-skillgro.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/flaticon-skillgro-new.min.css",
+    "inputFiles": [
+      "assets/css/flaticon-skillgro-new.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/tg-cursor.min.css",
+    "inputFiles": [
+      "assets/css/tg-cursor.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/aos.min.css",
+    "inputFiles": [
+      "assets/css/aos.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/course.min.css",
+    "inputFiles": [
+      "assets/css/course.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/default.min.css",
+    "inputFiles": [
+      "assets/css/default.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/helper.min.css",
+    "inputFiles": [
+      "assets/css/helper.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/listing.min.css",
+    "inputFiles": [
+      "assets/css/listing.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/magnific-popup.min.css",
+    "inputFiles": [
+      "assets/css/magnific-popup.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/main.min.css",
+    "inputFiles": [
+      "assets/css/main.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/odometer.min.css",
+    "inputFiles": [
+      "assets/css/odometer.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/plyr.min.css",
+    "inputFiles": [
+      "assets/css/plyr.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/spacing.min.css",
+    "inputFiles": [
+      "assets/css/spacing.min.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/ajax-form.min.js",
+    "inputFiles": [
+      "assets/js/ajax-form.min.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/aos.min.js",
+    "inputFiles": [
+      "assets/js/aos.min.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/jquery.appear.min.js",
+    "inputFiles": [
+      "assets/js/jquery.appear.min.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/jquery.circleType.min.js",
+    "inputFiles": [
+      "assets/js/jquery.circleType.min.js"
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: https://www.mylogic.ac/admin
+Sitemap: https://www.mylogic.ac/sitemap.xml

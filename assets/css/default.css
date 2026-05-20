@@ -1,0 +1,89 @@
+﻿.course-text h2 {
+    width: 190px;
+    text-align: center;
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+}
+
+button.btn-close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+    button.btn-close i {
+        color: #fff;
+        opacity: 1;
+    }
+
+button.btn-close {
+    opacity: 1;
+}
+
+.btn-close {
+    --bs-btn-close-color: #fff;
+    --bs-btn-close-bg: unset !important;
+}
+
+.modal-content {
+    border-radius: 6px;
+}
+
+ul.d-lg-none.d-block.new-flex {
+    display: flex !important;
+    gap: 1rem;
+    margin: 10px 10px;
+}
+
+.modal-body {
+    z-index: 1;
+    padding: 40px 20px;
+    background: #e94367;
+}
+
+.modal-title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.scroll__top {
+    background: #81c242 !important;
+}
+
+.new-flex {
+    padding: 20px 10px;
+}
+
+    .new-flex a {
+        box-shadow: none;
+        color: #fff !important;
+        text-align: center !important;
+    }
+
+        .new-flex a.btn.btn-outline {
+            border: 2px solid #000;
+            background: #000;
+        }
+
+.tgmobile__menu .navigation li ul.new-flex li > a {
+    margin-left: 0px !important;
+    padding: 10px 25px !important;
+}
+
+.new-flex li {
+    border-top: unset !important;
+}
+
+.account__form .btn img {
+    filter: invert(1);
+}
+
+.ftr-list li:last-child a::after {
+    content: none;
+    display: none;
+}
+
+iframe {
+    border-radius: 12px;
+}
+

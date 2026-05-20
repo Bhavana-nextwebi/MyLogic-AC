@@ -1,0 +1,552 @@
+﻿<%@ Master Language="VB" CodeFile="userMaster.master.vb" Inherits="userMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mylogic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link hreflang="en" rel="shortcut icon" type="image/x-icon" href="assets/images/fab.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link href="assets/css/flaticon.css" rel="stylesheet" />
+    <!-- CSS here -->
+    <link hreflang="en" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link hreflang="en" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link hreflang="en" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/animate.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/flaticon-skillgro.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/flaticon-skillgro-new.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/default-icons.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/select2.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/odometer.min.css">
+    <link hreflang="en" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link hreflang="en" rel="stylesheet" href="assets/css/aos.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/plyr.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/spacing.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/tg-cursor.min.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/main.css">
+    <link hreflang="en" rel="stylesheet" href="assets/css/helper.min.css">
+    <style>
+        .course-text h2 {
+            width: 190px;
+            text-align: center;
+            font-weight: var(--fw-600);
+            text-transform: uppercase;
+        }
+
+        button.btn-close {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+
+            button.btn-close i {
+                color: #fff;
+                opacity: 1;
+            }
+
+        button.btn-close {
+            opacity: 1;
+        }
+
+        .btn-close {
+            --bs-btn-close-color: #fff;
+            --bs-btn-close-bg: unset !important;
+        }
+
+        .modal-content {
+            border-radius: 6px;
+        }
+
+        ul.d-lg-none.d-block.new-flex {
+            display: flex !important;
+            gap: 1rem;
+            margin: 10px 10px;
+        }
+
+        .modal-body {
+            z-index: 1;
+            padding: 40px 40px;
+            background: #e94367;
+        }
+
+        .modal-title {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .new-flex {
+            padding: 20px 10px;
+        }
+
+            .new-flex a {
+                box-shadow: none;
+                color: #fff !important;
+                text-align: center !important;
+            }
+
+                .new-flex a.btn.btn-outline {
+                    border: 2px solid #000;
+                    background: #000;
+                }
+
+        .tgmobile__menu .navigation li ul.new-flex li > a {
+            margin-left: 0px !important;
+            padding: 10px 25px !important;
+        }
+
+        .new-flex li {
+            border-top: unset !important;
+        }
+
+        .dashboard__top-bg {
+            min-height: 200px;
+        }
+
+        .dashboard__area {
+            margin-top: 120px !important;
+        }
+
+        .ftr-list li:last-child a::after {
+            content: none;
+            display: none;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Scroll-top -->
+        <button class="scroll__top scroll-to-target" data-target="html">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header>
+            <div id="header-fixed-height"></div>
+            <div id="sticky-header" class="tg-header__area tg-header__style-seven">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tgmenu__wrap">
+                                <nav class="tgmenu__nav">
+                                    <div class="logo">
+                                        <a href="Default.aspx">
+                                            <img src="assets/images/icons/mylogic.png" class="desktop-logo"
+                                                alt="Logo"></a>
+                                    </div>
+                                    <div class="tgmenu__categories select-grp-two  d-block">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="skillgro-list"></i>
+                                                All Courses
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">CMA USA</a></li>
+                                                <li><a class="dropdown-item" href="#">CPA USA</a></li>
+                                                <li><a class="dropdown-item" href="#">ACCA</a></li>
+                                                <li><a class="dropdown-item" href="#">CIA</a></li>
+                                                <li><a class="dropdown-item" href="#">CFP</a></li>
+                                                <li><a class="dropdown-item" href="#">FP&A</a></li>
+                                                <li><a class="dropdown-item" href="#">FRM</a></li>
+                                                <li><a class="dropdown-item" href="#">CFA</a></li>
+                                                <li><a class="dropdown-item" href="#">CIMA</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
+                                        <ul class="navigation">
+
+                                            <li class=""><a href="about-us.aspx">About
+                                           Us</a>
+
+                                            </li>
+
+                                            <li class=""><a href="gallery.aspx">Gallery</a>
+
+                                            </li>
+
+                                            <li><a href="blog.aspx">Blogs</a>
+
+                                            </li>
+                                            <li class=""><a href="contact-us.aspx">Contact Us</a>
+
+                                            </li>
+                                            <li class="d-lg-none d-block">
+                                                <ul class=" new-flex">
+                                                    <li class="header-btn ">
+                                                        <a href="sign-up.aspx" class="btn">Login</a>
+                                                    </li>
+                                                    <li class="header-btn ">
+                                                        <a href="register.aspx" class="btn btn-outline">Sign Up</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tgmenu__action tgmenu__action-seven">
+                                        <ul class="list-wrap">
+
+                                            <li>
+                                                <a class="text_black" href="tel:+918800336720">
+                                                    <img
+                                                        src="assets/images/icons/phone-call.png"
+                                                        class="me-2 img-fluid callicon">+91
+                                           8800336720</a>
+
+                                            </li>
+                                            <li class="wishlist-icon d-flex align-items-center gap-2">
+                                                <a href="cart.html" class="cart-count" contenteditable="false" style="cursor: pointer;">
+                                                    <i class="fa-regular fa-user"></i>
+
+                                                </a>
+                                                <span class="text-dark">Akash </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mobile-nav-toggler"><i class="fa-solid fa-bars"></i></div>
+                                </nav>
+                            </div>
+                            <!-- Mobile Menu  -->
+                            <div class="tgmobile__menu">
+                                <nav class="tgmobile__menu-box">
+                                    <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="Default.aspx">
+                                            <img src="assets/images/icons/mylogic.png" alt="Logo"></a>
+                                    </div>
+
+                                    <div class="tgmobile__menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+
+                                </nav>
+                            </div>
+                            <div class="tgmobile__menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" bg_primary">
+                    <div class="container custom-container">
+                        <div class="courseHeader d-flex align-items-center">
+
+                            <div class=" ">
+                                <ul>
+                                    <li><a class="current" href="cma-usa.aspx">CMA USA</a></li>
+                                    <li><a class="current1" href="cpa-usa.aspx">CPA USA </a></li>
+                                    <li><a class="current2" href="acca.aspx">ACCA</a></li>
+                                    <li><a class="current3" href="cia.aspx">CIA</a></li>
+                                    <li><a class="current4" href="cfp.aspx">CFP</a></li>
+                                    <li><a class="current5" href="fpa.aspx">FP&A</a></li>
+                                    <li><a class="current6" href="frm.aspx">FRM</a></li>
+                                    <li><a class="current7" href="cfa.aspx">CFA</a></li>
+                                    <li><a class="current8" href="cima.aspx">CIMA</a></li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- header-search -->
+            <div class="search__popup">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search__wrapper">
+                                <div class="search__close">
+                                    <button type="button" class="search-close-btn">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="search__form">
+                                    <form action="##">
+                                        <div class="search__input">
+                                            <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                            <span class="search-focus-border"></span>
+                                            <button>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                    </path>
+                                                    <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentcolor"
+                                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-popup-overlay"></div>
+            <!-- header-search-end -->
+
+        </header>
+        <!-- header-area-end -->
+
+
+
+        <!-- main-area -->
+        <main class="main-area fix">
+            <section class="dashboard__area section-pb-120 ">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="dashboard__sidebar-wrap">
+                                <div class="dashboard__sidebar-title mb-20">
+                                    <h6 class="title">Dashboard</h6>
+                                </div>
+                                <nav class="dashboard__sidebar-menu">
+                                    <ul class="list-wrap">
+                                        <li class="active">
+                                            <a href="user-profile.aspx">
+                                                <i class="fas fa-home"></i>
+                                                My Profile
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="order-history.aspx">
+                                                <i class="skillgro-satchel"></i>
+                                                Order History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Default.aspx">
+                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </ul>
+                                </nav>
+
+                                <nav class="dashboard__sidebar-menu">
+                                    <ul class="list-wrap">
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__area ">
+            <div class="footer__top pb-0 footer__top-two">
+                <div class="container custom-container">
+                    <div class="row">
+
+
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer__widget">
+                                <h4 class="footer__widget-title">Quick Links</h4>
+                                <div class="footer__link">
+                                    <ul class="list-wrap">
+                                        <li><a href="contact-us.aspx">Contact Us</a></li>
+
+                                        <li><a href="blog.aspx">Blog</a></li>
+
+                                        <li><a href="career.aspx">career</a>
+
+                                        </li>
+                                        <li><a href="return-policy.aspx">Return Policy</a></li>
+                                        <li><a href="privacy-policy.aspx">Privacy Policy</a></li>
+                                        <li><a href="terms-and-conditions.aspx">Terms and Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer__widget">
+                                <h4 class="footer__widget-title">BANGALORE
+                                </h4>
+                                <div class="footer__content">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>Address: MYLOGIC BUSINESS MANAGEMENT SCHOOL
+NO.806 Souravya Building,
+10th A Main Rd, Indira Nagar 1st Stage,
+Bengaluru, Karnataka 560038.
+                                    </p>
+                                    <ul class="list-wrap">
+                                        <li><a href="tel:+918800336720"><i class="fa-solid fa-phone"></i>+91 8800336720</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-location-arrow"></i>Get Direction</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer__widget pr-20">
+                                <h4 class="footer__widget-title">MANGALURU</h4>
+                                <div class="footer__content">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>Address: Mylogic Business Management School Pvt Ltd,
+  2nd Floor,Manasa Towers,
+                                        <br />
+                                        Pvs junction, kodialbail, MG road,
+                                        <br />
+                                        Mangalore, Karnataka 575003
+                                    </p>
+                                    <ul class="list-wrap">
+                                        <li><a href="tel:+918800336720"><i class="fa-solid fa-phone"></i>+91 8800336720</a></li>
+                                        <%--                                        <li><a href="#"><i class="fa-solid fa-location-arrow"></i>Get Direction</a></li>--%>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer__widget">
+                                <h4 class="footer__widget-title">MUMBAI</h4>
+                                <div class="footer__content">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>Address: B 404, Royal Sands Apartment,
+Behind Citi Mall,
+Off Link road,
+Andheri West,
+Mumbai 400053
+                                    </p>
+                                    <ul class="list-wrap">
+                                        <li><a href="tel:+918800336720"><i class="fa-solid fa-phone"></i>+91 9867949275</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-location-arrow"></i>Get Direction</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <div class="ftr-list">
+                                <h4 class="footer__widget-title">Popular Courses</h4>
+                                <ul class=" ">
+                                    <li><a class="current" href="cma-usa.aspx">CMA USA</a></li>
+                                    <li><a class="current1" href="cpa-usa.aspx">CPA USA </a></li>
+                                    <li><a class="current2" href="acca.aspx">ACCA</a></li>
+                                    <li><a class="current3" href="cia.aspx">CIA</a></li>
+                                    <li><a class="current4" href="cfp.aspx">CFP</a></li>
+                                    <li><a class="current5" href="fpa.aspx">FP&A</a></li>
+                                    <li><a class="current6" href="frm.aspx">FRM</a></li>
+                                    <li><a class="current7" href="cfa.aspx">CFA</a></li>
+                                    <li><a class="current8" href="cima.aspx">CIMA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                            <div class="ftr-list">
+                                <h4 class="footer__widget-title">Follow Us</h4>
+                                <ul class="">
+                                    <li><a target="_blank" href="https://www.instagram.com/mylogicbangalore/"><i class="fa-brands fa-instagram fs-4"></i></a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCjitkRPsx5PctU4bOUUIQkg"><i class="fa-brands fa-youtube fs-4"></i></a></li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/company/42816045/admin/"><i class="fa-brands fa-linkedin-in fs-4"></i></a></li>
+                                    <li><a target="_blank" href="https://in.pinterest.com/smylogic/"><i class="fa-brands fa-pinterest fs-4"></i></a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/MyLogicBangalore/"><i class="fa-brands fa-facebook fs-4"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-two">
+                <div class="container custom-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="text-start">
+                                <p class="text-white mb-0">
+                                    Disclaimer: All logos are the property of their respective owners and are used here for illustration purposes only.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="copy-right-text mt-lg-0 mt-4">
+                                <p class="text-white">© 2024 MyLogic. All rights reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="footer__bottom-menu  text-lg-end text-center">
+
+                                <p class="text-white">Website design by <a href="https://www.nextwebi.com/">Nextwebi</a></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/jquery.odometer.min.js"></script>
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <script src="assets/js/tween-max.min.js"></script>
+        <script src="assets/js/select2.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/jquery.marquee.min.js"></script>
+        <script src="assets/js/tg-cursor.min.js"></script>
+        <div class="cb-cursor" style="transform: translate3d(1165px, 1px, 0px);">
+            <div class="cb-cursor-text"></div>
+        </div>
+        <script src="assets/js/vivus.min.js"></script>
+        <script src="assets/js/ajax-form.min.js"></script>
+        <script src="assets/js/svg-inject.min.js"></script>
+        <script src="assets/js/jquery.circleType.min.js"></script>
+        <script src="assets/js/jquery.lettering.min.js"></script>
+        <script src="assets/js/plyr.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/aos.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            SVGInject(document.querySelectorAll("img.injectable"));
+
+
+        </script>
+    </form>
+</body>
+</html>
