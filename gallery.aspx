@@ -285,29 +285,52 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-    <div class="categories__item-four shine__animate-item">
-        <a class="example-image-link" href="assets/images/gal/7.png" data-lightbox="example-set2">
+                            <div class="categories__item-four shine__animate-item">
+                                <a class="example-image-link" href="assets/images/gal/7.png" data-lightbox="example-set2">
 
-            <img src="assets/images/gal/placement-new-1.jpeg" alt="Alternate Text" class="img-fluid">
-        </a>
-    </div>
-</div>
+                                    <img src="assets/images/gal/placement-new-1.jpeg" alt="Alternate Text" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
                         <div class="col-lg-4 col-sm-6">
-    <div class="categories__item-four shine__animate-item">
-        <a class="example-image-link" href="assets/images/gal/placement-new-2.jpeg" data-lightbox="example-set2">
+                            <div class="categories__item-four shine__animate-item">
+                                <a class="example-image-link" href="assets/images/gal/placement-new-2.jpeg" data-lightbox="example-set2">
 
-            <img src="assets/images/gal/placement-new-2.jpeg" alt="Alternate Text" class="img-fluid">
-        </a>
-    </div>
-</div>
+                                    <img src="assets/images/gal/placement-new-2.jpeg" alt="Alternate Text" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
                         <div class="col-lg-4 col-sm-6">
-    <div class="categories__item-four shine__animate-item">
-        <a class="example-image-link" href="assets/images/gal/placement-new-3.jpeg" data-lightbox="example-set2">
+                            <div class="categories__item-four shine__animate-item">
+                                <a class="example-image-link" href="assets/images/gal/placement-new-3.jpeg" data-lightbox="example-set2">
 
-            <img src="assets/images/gal/placement-new-3.jpeg" alt="Alternate Text" class="img-fluid">
-        </a>
-    </div>
-</div>
+                                    <img src="assets/images/gal/placement-new-3.jpeg" alt="Alternate Text" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                       
+                       
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="categories__item-four shine__animate-item">
+                                <a class="example-image-link" href="assets/images/gal/placement-img-1.jpeg" data-lightbox="example-set2">
+
+                                    <img src="assets/images/gal/placement-img-1.jpeg" alt="Alternate Text" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="categories__item-four shine__animate-item">
+                                <a class="example-image-link" href="assets/images/gal/placement-img-2.png" data-lightbox="example-set2">
+
+                                    <img src="assets/images/gal/placement-img-2.png" alt="Alternate Text" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="tab-pane fade" id="italian-tab-pane" role="tabpanel" aria-labelledby="italian-tab" tabindex="0">
